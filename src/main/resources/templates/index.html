@@ -7,20 +7,20 @@
     <div class="bg-light pt-5 shadow-lg">
         <!-- Carousel Start -->
         <div class="container-fluid mb-3">
-            <div class="row px-xl-5">
+            <div class="row px-xl-5 d-flex">
                 <div class="col-lg-8">
-                    <div id="header-carousel" class="carousel" data-ride="carousel">
-                        <div class="carousel-inner border rounded shadow-sm">
-                            <div class="carousel-item position-relative active" style="height: 370px;">
-                                <img class="position-absolute w-100 h-100" src="/img/banner/sis-gaming-dell.jpg"
+                    <div id="header-carousel" class="carousel h-100" data-ride="carousel">
+                        <div class="carousel-inner border rounded shadow-sm h-100 w-100">
+                            <div class="carousel-item position-relative active h-100 w-100">
+                                <img class="position-absolute" src="/img/banner/banner_1.jpg"
                                      style="object-fit: cover;" alt="banner">
                             </div>
-                            <div class="carousel-item position-relative" style="height: 370px;">
-                                <img class="position-absolute w-100 h-100" src="/img/banner/sis-gaming-hp.jpg"
+                            <div class="carousel-item position-relative h-100 w-100">
+                                <img class="position-absolute" src="/img/banner/banner_2.jpg"
                                      style="object-fit: cover;" alt="banner">
                             </div>
-                            <div class="carousel-item position-relative" style="height: 370px;">
-                                <img class="position-absolute w-100 h-100" src="/img/banner/sis-gaming-lenovo.jpg"
+                            <div class="carousel-item position-relative h-100 w-100">
+                                <img class="position-absolute" src="/img/banner/banner_3.jpg"
                                      style="object-fit: cover;" alt="banner">
                             </div>
                         </div>
@@ -38,21 +38,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center bg-light mb-4 border rounded shadow-sm"
-                         style="padding: 30px;">
+                <div class="col-lg-4 align-middle">
+                    <div class="d-flex align-items-center bg-light border rounded shadow-sm"
+                         style="padding: 25px 20px 25px 20px">
                         <h1 class="fa fa-check text-info m-0 mr-3"></h1>
-                        <h5 class="font-weight-semi-bold m-0">Sản phẩm chất lượng</h5>
+                        <h6 class="font-weight-semi-bold m-0">Sản phẩm chất lượng</h6>
                     </div>
-                    <div class="d-flex align-items-center bg-light mb-4 border rounded shadow-sm"
-                         style="padding: 30px;">
+                    <div class="d-flex align-items-center bg-light border rounded shadow-sm mt-4 mb-4"
+                         style="padding: 25px 20px 25px 20px">
                         <h1 class="fa fa-shipping-fast text-info m-0 mr-2"></h1>
-                        <h5 class="font-weight-semi-bold m-0">Miễn phí vận chuyển</h5>
+                        <h6 class="font-weight-semi-bold m-0">Miễn phí vận chuyển</h6>
                     </div>
-                    <div class="d-flex align-items-center bg-light mb-4 border rounded shadow-sm"
-                         style="padding: 30px;">
+                    <div class="d-flex align-items-center bg-light border rounded shadow-sm"
+                         style="padding: 25px 20px 25px 20px">
                         <h1 class="fas fa-exchange-alt text-info m-0 mr-3"></h1>
-                        <h5 class="font-weight-semi-bold m-0">Đổi trả trong vòng 15 ngày</h5>
+                        <h6 class="font-weight-semi-bold m-0">Đổi trả trong vòng 15 ngày</h6>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
         <!-- Carousel End -->
 
         <!-- Categories Start -->
-        <div class="container-fluid">
+        <div class="container-fluid pt-3">
             <h2 class="position-relative mx-xl-5 mb-4 section-title"><span
                     class="bg-light pr-3">Thương hiệu nổi bật</span>
             </h2>
@@ -70,7 +70,7 @@
                         <div class="bg-light bg-brand p-4 border rounded m-1"
                              th:each="categories, state : ${categoriesList}">
                             <a href=""><img class="align-self-center rounded"
-                                            th:src="@{${'/img/logo/'} + ${categories.categoryLogo}}" alt=""></a>
+                                            th:src="@{${'/img/logo/'} + ${categories.categoryLogo}}" alt="" src=""></a>
                         </div>
                     </div>
                 </div>
@@ -98,15 +98,16 @@
                     <div class="bg-light mb-4 shadow rounded">
                         <div class="product-img position-relative overflow-hidden">
                             <a href="">
-                            <img class="img-fluid w-100 rounded" style="padding: 20px;"
-                                 th:src="@{${'/img/product/'} + ${product.productThumb}}" alt="">
+                                <img class="img-fluid w-100 rounded" style="padding: 20px;"
+                                     th:src="@{${'/img/product/'} + ${product.productThumb}}" alt="" src="">
                             </a>
                         </div>
                         <div class="text-center" style="padding: 15px;">
                             <a class="text-decoration-none text-wrap text-dark font-weight-bold" href=""
                                th:utext="${product.productName}"></a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <span class="font-weight-bold text-danger" th:utext="${#numbers.formatDecimal(product.price, 1, 'POINT', 0, 'DEFAULT')} + ${'₫'}"></span>
+                                <span class="font-weight-bold text-danger"
+                                      th:utext="${#numbers.formatDecimal(product.price, 1, 'POINT', 0, 'DEFAULT')} + ${'₫'}"></span>
                                 <span class="ml-2 font-weight-bold text-primary"
                                       th:utext="${'-'} + ${product.percentPrice} + ${'%'}">
                                 </span>

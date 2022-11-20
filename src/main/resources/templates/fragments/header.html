@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<body>
+<th:block th:fragment="header">
 <!-- Topbar Start -->
-<div class="container" th:fragment="header">
+<div class="container">
     <div class="row align-items-center bg-transparent py-3 px-xl-5 d-none d-lg-flex">
         <div class="col-lg-4">
             <a href="" class="text-decoration-none">
@@ -50,40 +50,40 @@
     <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 d-flex m-auto align-items-center">
         <div class="container flex justify-content-center" id="navbarCollapse">
             <a href="" class="nav-link text-info bg-brand p-0 rounded-sm">
-                <div class="d-flex align-items-center pl-1 pr-1 ml-1 mr-1 p1">
+                <div class="d-flex align-items-center pl-1 pr-1 ml-2 mr-2 p1">
                     <div style="width: 50px; height: 50px;">
                         <img class="border-0 h-100 w-100 d-inline-block" src="/img/icon/laptop_icon.png" alt="">
                     </div>
-                    <span class="d-flex text-nowrap text-info font-bold pl-1">Laptop</span>
+                    <span class="d-flex text-nowrap text-info font-bold pl-1 font-weight-bold">Laptop</span>
                 </div>
             </a>
             <a href="" class="nav-link text-info bg-brand p-0 rounded-sm">
-                <div class="d-flex align-items-center pl-1 pr-1 ml-1 mr-1 p1">
+                <div class="d-flex align-items-center pl-1 pr-1 ml-2 mr-2 p1">
                     <img class="rounded border-0" src="/img/icon/monitor_icon.png" style="width: 50px; height: 50px;">
-                    <span class="d-flex text-nowrap text-info font-bold pl-1">Màn hình</span>
+                    <span class="d-flex text-nowrap text-info font-bold pl-2 pr-1 font-weight-bold">Màn hình</span>
                 </div>
             </a>
             <a href="" class="nav-link text-info bg-brand p-0 rounded-sm">
-                <div class="d-flex align-items-center pl-1 pr-1 ml-1 mr-1 p1">
+                <div class="d-flex align-items-center pl-1 pr-1 ml-2 mr-2 p1">
                     <img class="border-0" src="/img/icon/keyboard_icon.png" style="width: 50px; height: 50px;">
-                    <span class="flex text-nowrap text-info font-bold pl-1">Bàn phím</span>
+                    <span class="flex text-nowrap text-info font-bold pl-2 pr-1 font-weight-bold">Bàn phím</span>
                 </div>
             </a>
             <a href="" class="nav-link text-info bg-brand p-0 rounded-sm h-100">
-                <div class="d-flex align-items-center pl-1 pr-1 ml-1 mr-1 p1">
+                <div class="d-flex align-items-center pl-1 pr-1 ml-2 mr-2 p1">
                     <img class="border-0" src="/img/icon/pc_icon.png" style="width: 50px; height: 50px;">
-                    <span class="flex text-nowrap text-info font-bold pl-1">PC</span>
+                    <span class="flex text-nowrap text-info font-bold pl-2 pr-1 font-weight-bold">PC</span>
                 </div>
             </a>
             <a href="" class="nav-link text-info bg-brand p-0 rounded-sm">
-                <div class="d-flex align-items-center pl-1 pr-1 ml-1 mr-1 p1">
+                <div class="d-flex align-items-center pl-1 pr-1 ml-2 mr-2 p1">
                     <img class="border-0" src="/img/icon/audio_icon.png" style="width: 50px; height: 50px;">
-                    <span class="flex text-nowrap text-info font-bold pl-1">Âm thanh</span>
+                    <span class="flex text-nowrap text-info font-bold pl-2 pr-1 font-weight-bold">Âm thanh</span>
                 </div>
             </a>
         </div>
     </nav>
 </div>
 <!-- Navbar End -->
-</body>
+</th:block>
 </html>
