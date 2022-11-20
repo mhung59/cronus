@@ -1,7 +1,7 @@
 package com.hero.cronus.controller;
 
-import com.hero.cronus.entity.Categories;
-import com.hero.cronus.entity.ProductEntity;
+import com.hero.cronus.entity.CategoriesEntity;
+import com.hero.cronus.model.ProductView;
 import com.hero.cronus.service.CategoriesService;
 import com.hero.cronus.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +21,17 @@ public class WebController {
 
     @Autowired
     private ProductService productService;
-    @GetMapping(value = "home")
+    @GetMapping(value = "/")
     public String viewHomePage(Model model){
-        List<Categories> categoriesList = categoriesService.getAllCategories();
-        List<ProductEntity> productList = productService.getAllProduct();
+        List<CategoriesEntity> categoriesList = categoriesService.getAllCategories();
+        List<ProductView> productList = productService.getAllProduct();
         model.addAttribute("categoriesList", categoriesList);
         model.addAttribute("productList", productList);
         return "index";
+    }
+
+    @GetMapping(value = "/detail")
+    public String detailProduct(Model model){
+        return "detail";
     }
 }

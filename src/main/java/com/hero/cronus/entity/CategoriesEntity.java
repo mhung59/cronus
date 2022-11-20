@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Table(name = "categories")
 @Getter
 @Setter
-public class Categories extends BaseEntity {
+public class CategoriesEntity extends BaseEntity {
     private String categoryName;
     private String categoryCode;
     private String categoryDesc;

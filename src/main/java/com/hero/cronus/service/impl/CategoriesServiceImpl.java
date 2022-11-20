@@ -1,7 +1,7 @@
 package com.hero.cronus.service.impl;
 
 import com.hero.cronus.dao.CategoriesRepository;
-import com.hero.cronus.entity.Categories;
+import com.hero.cronus.entity.CategoriesEntity;
 import com.hero.cronus.service.CategoriesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ public class CategoriesServiceImpl implements CategoriesService {
     private CategoriesRepository categoriesRepository;
 
     @Override
-    public List<Categories> getAllCategories() {
+    public List<CategoriesEntity> getAllCategories() {
         return categoriesRepository.findAll();
     }
 }

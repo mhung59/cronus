@@ -6157,6 +6157,10 @@ button.bg-danger:focus {
   background-color: #FFFFFF !important;
 }
 
+.bg-brand:hover {
+  background-color: #ecf0f4 !important;
+}
+
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
@@ -6271,8 +6275,8 @@ button.bg-dark:focus {
 }
 
 .rounded-right {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
 }
 
 .rounded-bottom {
@@ -6281,8 +6285,8 @@ button.bg-dark:focus {
 }
 
 .rounded-left {
-  border-top-left-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important;
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
 }
 
 .rounded-lg {

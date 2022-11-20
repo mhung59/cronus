@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- Topbar Start -->
+<div class="container" th:fragment="header">
+    <div class="row align-items-center bg-transparent py-3 px-xl-5 d-none d-lg-flex">
+        <div class="col-lg-4">
+            <a href="" class="text-decoration-none">
+                <span class="h1 text-uppercase text-info bg-transparent px-2">Cronus</span>
+            </a>
+        </div>
+        <div class="col-lg-4 col-6 text-left">
+            <form action="">
+                <div class="input-group rounded">
+                    <input type="text" class="form-control rounded" placeholder="Bạn tìm gì...">
+                    <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-info border-0">
+                                <i class="fa fa-search"></i>
+                            </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-3 text-right">
+            <a href="" class="btn px-0">
+                <i class="fas fa-heart text-info"></i>
+                <span class="badge text-secondary border border-secondary rounded-circle"
+                      style="padding-bottom: 2px;">0</span>
+            </a>
+            <a href="" class="btn px-0 ml-3">
+                <i class="fas fa-shopping-cart text-info"></i>
+                <span class="badge text-secondary border border-secondary rounded-circle"
+                      style="padding-bottom: 2px;">0</span>
+            </a>
+        </div>
+        <div class="col-lg-1 d-inline-flex justify-content-end">
+            <a type="button" class="fas fa-user-circle dropdown-toggle text-info" data-toggle="dropdown">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button">Đăng nhập</button>
+                <button class="dropdown-item" type="button">Đăng ký</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div id="navbar_top" class="navbar container-fluid bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 d-flex m-auto align-items-center">
+        <div class="container flex justify-content-center" id="navbarCollapse">
+            <a href="" class="nav-item nav-link text-info bg-brand m-1 p-0 rounded-sm">
+                <img class="w-25 border-0" src="/img/icon/laptop_icon.png">
+                <span class="flex text-nowrap text-info font-bold d-inline-block">Laptop</span>
+            </a>
+            <a href="" class="nav-item nav-link text-info bg-brand m-1 p-0 rounded-sm">
+                <img class="w-25 rounded border-0" src="/img/icon/monitor_icon.png">
+                <span class="flex text-nowrap text-info font-bold">Màn hình</span>
+            </a>
+            <a href="" class="nav-item nav-link text-info bg-brand m-1 p-0 rounded-sm">
+                <img class=" w-25 border-0" src="/img/icon/keyboard_icon.png">
+                <span class="flex text-nowrap text-info font-bold">Bàn phím</span>
+            </a>
+            <a href="" class="nav-item nav-link text-info bg-brand m-1 p-0 rounded-sm">
+                <img class=" w-25 border-0" src="/img/icon/pc_icon.png">
+                <span class="flex text-nowrap text-info font-bold">PC</span>
+            </a>
+            <a href="" class="nav-item nav-link text-info bg-brand m-1 p-0 rounded-sm">
+                <img class=" w-25 border-0" src="/img/icon/audio_icon.png">
+                <span class="flex text-nowrap text-info font-bold">Âm thanh</span>
+            </a>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+</body>
+</html>
