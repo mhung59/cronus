@@ -15,12 +15,8 @@
                                 <img class="position-absolute" src="/img/banner/banner_1.jpg"
                                      style="object-fit: cover;" alt="banner">
                             </div>
-                            <div class="carousel-item position-relative h-100 w-100">
-                                <img class="position-absolute" src="/img/banner/banner_2.jpg"
-                                     style="object-fit: cover;" alt="banner">
-                            </div>
-                            <div class="carousel-item position-relative h-100 w-100">
-                                <img class="position-absolute" src="/img/banner/banner_3.jpg"
+                            <div class="carousel-item position-relative h-100 w-100" th:each="banner, state : ${banners}">
+                                <img class="position-absolute" th:src="${banner}"
                                      style="object-fit: cover;" alt="banner">
                             </div>
                         </div>
