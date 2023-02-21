@@ -93,13 +93,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1 w-100 d-flex" th:each="product, list : ${productList}">
                     <div class="bg-light mb-4 shadow rounded">
                         <div class="product-img position-relative overflow-hidden">
-                            <a href="">
+                            <a th:href="@{${'/detail?id='} + ${product.id}}">
                                 <img class="img-fluid w-100 rounded" style="padding: 20px;"
                                      th:src="@{${'/img/product/'} + ${product.productThumb}}" alt="" src="">
                             </a>
                         </div>
                         <div class="text-center" style="padding: 15px;">
-                            <a class="text-decoration-none text-wrap text-dark font-weight-bold" href=""
+                            <a class="text-decoration-none text-wrap text-dark font-weight-bold" th:href="@{${'/detail?id='} + ${product.id}}"
                                th:utext="${product.productName}"></a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
                                 <span class="font-weight-bold text-danger"

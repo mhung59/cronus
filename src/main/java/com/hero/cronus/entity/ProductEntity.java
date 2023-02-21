@@ -15,6 +15,5 @@ public class ProductEntity extends BaseEntity {
     private String categoryCode;
     private Long price;
     private Long promotionPrice;
-
     private String productThumb;
 }

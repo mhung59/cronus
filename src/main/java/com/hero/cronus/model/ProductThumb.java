@@ -1,6 +1,9 @@
 package com.hero.cronus.model;
 
-public class ProductView {
+import com.hero.cronus.entity.ProductEntity;
+
+public class ProductThumb {
+    private Long id;
     private String productName;
     private String categoryCode;
     private Long price;
@@ -45,5 +48,23 @@ public class ProductView {
 
     public void setProductThumb(String productThumb) {
         this.productThumb = productThumb;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void mapper(ProductEntity productEntity){
+        this.setId(productEntity.getId());
+        this.setProductName(productEntity.getProductName());
+        this.setPrice(productEntity.getPromotionPrice());
+        this.setProductThumb(productEntity.getProductThumb());
+        double percent = (double) (productEntity.getPrice()-productEntity.getPromotionPrice())/productEntity.getPrice();
+        Long percentPrice = Math.round(percent * 100);
+        this.setPercentPrice(percentPrice);
     }
 }
